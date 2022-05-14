@@ -34,6 +34,8 @@ module.exports = {
     const escapedSrc = src.replace(/`/g, '\\`')
       .replace(/\$(?=\{.*?\})/g, '\\$')
 
-    return `module.exports = \`${escapedSrc}\``
+    return {
+      code: `module.exports = \`${escapedSrc}\``
+    }
   }
 }
