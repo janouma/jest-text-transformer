@@ -10,8 +10,8 @@ In your `package.json` add these lines:
 
 ```json
 "jest": {
-    "transform": {
-      "^.+\\.txt$": "jest-text-transformer"
-    }
+  "transform": {
+    "^.+\\.txt$": "jest-text-transformer"
   }
+}
 ```
